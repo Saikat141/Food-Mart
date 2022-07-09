@@ -17,7 +17,7 @@
 					  <div class="col-sm-6" style=" border-right:1px solid black;">
 					     <ul>
 						  <li><h5>HOTEL LINKS</h5></li>
-						  <li><a href="vendor-new.php">Register On Food Hunt</a></li>
+						  <li><a href="vendor-new.php">Register On Food Mart</a></li>
 						  <li><a href="vendor_login.php">Hotel Account Login</a></li>
 						  <li><a href="food.php">Add Foods</a></li>
 
