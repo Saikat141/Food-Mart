@@ -8,7 +8,7 @@
 
 					  <div class="col-sm-6" style=" border-right:1px solid black;">
 					    <ul>
-                          <li><h5>ADMIN SECTION</h5></li>
+                    <li><h5>ADMIN SECTION</h5></li>
 						  <li><a href="admin.php">Admin Login</a></li>
 
 						</ul>

@@ -53,6 +53,7 @@
 	                              });
 	                            });
 
+
 								//hotel search
 								$(document).ready(function(){
 
@@ -87,7 +88,7 @@
 	                            });
 </script>
 <style>
-//body{
+body{
      background-image:url("img/main_spice2.jpg");
 	 background-repeat: no-repeat;
 	 background-attachment: fixed;
@@ -306,7 +307,7 @@ ul li a:hover{text-decoration:none;}
 
 
 
-<!--container 1 ends-->
+
 
 
 
