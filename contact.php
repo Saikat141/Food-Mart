@@ -14,12 +14,12 @@ else
 {
 	$cust_id="";
 }
- 
+
 $query=mysqli_query($con,"select  tblvendor.fld_name,tblvendor.fldvendor_id,tblvendor.fld_email,
 tblvendor.fld_mob,tblvendor.fld_address,tblvendor.fld_logo,tbfood.food_id,tbfood.foodname,tbfood.cost,
-tbfood.cuisines,tbfood.paymentmode 
+tbfood.cuisines,tbfood.paymentmode
 from tblvendor inner join tbfood on tblvendor.fldvendor_id=tbfood.fldvendor_id;");
-while($row=mysqli_fetch_array($query))
+while($row = mysqli_fetch_array($query))
 {
 	$arr[]=$row['food_id'];
 	shuffle($arr);
@@ -29,7 +29,7 @@ while($row=mysqli_fetch_array($query))
 
  if(isset($addtocart))
  {
-	 
+
 	if(!empty($_SESSION['cust_id']))
 	{
 		 $_SESSION['cust_id']=$cust_id;
@@ -40,7 +40,7 @@ while($row=mysqli_fetch_array($query))
 		header("location:form/?product=$addtocart");
 	}
  }
- 
+
  if(isset($login))
  {
 	 header("location:form/index.php");
@@ -50,7 +50,7 @@ while($row=mysqli_fetch_array($query))
 	 session_destroy();
 	 header("location:index.php");
  }
- 
+
  if(isset($message))
  {
 	 echo $name;
@@ -66,7 +66,7 @@ while($row=mysqli_fetch_array($query))
 		 echo "failed";
 	 }
 }$query=mysqli_query($con,"select tbfood.foodname,tbfood.fldvendor_id,tbfood.cost,tbfood.cuisines,tbfood.fldimage,tblcart.fld_cart_id,tblcart.fld_product_id,tblcart.fld_customer_id from tbfood inner  join tblcart on tbfood.food_id=tblcart.fld_product_id where tblcart.fld_customer_id='$cust_id'");
-  $re=mysqli_num_rows($query);
+  $re =mysqli_num_rows($query);
 ?>
 <html>
   <head>
@@ -80,7 +80,7 @@ while($row=mysqli_fetch_array($query))
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
-     
+
 	 <style>
 	 .carousel-item {
   height: 100vh;
@@ -92,12 +92,12 @@ while($row=mysqli_fetch_array($query))
   background-size: cover;
 }
 	 </style>
-	 
-	 
+
+
 	 <script>
 	 //search product function
             $(document).ready(function(){
-	
+
 	             $("#search_text").keypress(function()
 	                      {
 	                       load_data();
@@ -113,7 +113,7 @@ while($row=mysqli_fetch_array($query))
 			                                  }
 		                                });
 	                             }
-	
+
 	                           $('#search_text').keyup(function(){
 		                       var search = $(this).val();
 		                           if(search != '')
@@ -122,7 +122,7 @@ while($row=mysqli_fetch_array($query))
 		                                }
 		                            else
 		                             {
-			                         load_data();			
+			                         load_data();
 		                              }
 	                                });
 	                              });
@@ -134,13 +134,13 @@ ul li a{color:black; font-weight:bold;}
 ul li a:hover{text-decoration:none;}
 </style>
   </head>
-  
-    
+
+
 <body>
 <div id="result" style="position:fixed;top:100; right:50;z-index: 3000;width:350px;background:white;"></div>
 <!--navbar start-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  
+
     <a class="navbar-brand" href="index.php"><span style="color:red;font-family: 'Permanent Marker', cursive;">Food Mart</span></a>
     <?php
 	if(!empty($cust_id))
@@ -154,11 +154,11 @@ ul li a:hover{text-decoration:none;}
           <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-	
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.php">Home
-                
+
               </a>
         </li>
         <li class="nav-item">
@@ -177,7 +177,7 @@ ul li a:hover{text-decoration:none;}
 			{
 			?>
 			<a href="form/index.php?msg=you must be login first"><span style="color:red; font-size:30px;"><i class="fa fa-shopping-cart" aria-hidden="true"><span style="color:red;" id="cart"  class="badge badge-light">0</span></i></span></a>
-			
+
 			&nbsp;&nbsp;&nbsp;
 			<button class="btn btn-outline-danger my-2 my-sm-0" name="login" type="submit">Log In</button>&nbsp;&nbsp;&nbsp;
             <?php
@@ -192,11 +192,11 @@ ul li a:hover{text-decoration:none;}
 			?>
 			</form>
         </li>
-		
+
       </ul>
-	  
+
     </div>
-	
+
 </nav>
 <!--navbar ends-->
 
@@ -216,7 +216,7 @@ ul li a:hover{text-decoration:none;}
                  <input type="email" class="form-control"  placeholder="email*" value="<?php if(isset($cust_id)) echo $cust_id; ?>" name="email" required/>
             </div>
 			<div class="form-group">
-                 <input type="tel" class="form-control" pattern="[6-9]{1}[0-9]{9}"  name="phone" placeholder="Phone(optinal) EX 9213298761"/>
+                 <input type="tel" class="form-control"  name="phone" placeholder="Phone(optinal) "/>
             </div>
 			<div class="form-group">
                 <textarea class="form-control"    placeholder="Message*" name="msgtxt" rows="3" col="10" required/></textarea/>
@@ -228,9 +228,9 @@ ul li a:hover{text-decoration:none;}
 	</div>
     <div class="col-sm-4" style="padding:30px;">
 	   <div class="form-group">
-           <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<b>7503515386</b><br><br>
-			<i class="fa fa-home" aria-hidden="true"></i>&nbsp; 23-A ,North-East Campus,Kingsway,London Zip Code-2000411<br>(24*7 Days)
-	       
+           <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<b>01231233322</b><br><br>
+			<i class="fa fa-home" aria-hidden="true"></i>&nbsp; 23-A ,North-East Campus, Dhaka Zip Code-223<br>(24*7 Days)
+
 	   </div>
 	</div>
   </div>
