@@ -286,7 +286,7 @@ ul li a:hover{text-decoration:none;}
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/pic_2.jpg" alt="New York" class="d-block w-100">
+      <img src="img/pic_1.jpg" alt="New York" class="d-block w-100">
       <div class="carousel-caption">
         <h3 class= "head">New York</h3>
         <p class= "line">We love the FRY!</p>
