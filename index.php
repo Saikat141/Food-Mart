@@ -96,8 +96,7 @@ if(isset($message))
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
 
-
-
+ 		
 
 	 <script>
 	 //search product function
@@ -167,7 +166,16 @@ if(isset($message))
 	                            });
 </script>
 <style>
-//body{
+	.head{
+			color: #D61C4E;
+		}
+		.line{
+
+			color:#D9F8C4;
+		}
+		
+
+body{
      background-image:url("img/main_spice2.jpg");
 	 background-repeat: no-repeat;
 	 background-attachment: fixed;
@@ -216,18 +224,16 @@ ul li a:hover{text-decoration:none;}
 		     <a href="#" class="nav-link"><form method="post"><input type="text" name="search_text" id="search_text" placeholder="Search by Food Name " class="form-control " /></form></a>
 		  </li>
 		  <li class="nav-item active">
-          <a class="nav-link" href="index.php">Home
-
-              </a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="aboutus.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services.php">Services</a>
+          <a class="nav-link" href="services.php" >Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.php">Contact</a>
+          <a class="nav-link" href="contact.php" >Contact</a>
         </li>
 		<li class="nav-item">
 		  <form method="post">
@@ -266,24 +272,24 @@ ul li a:hover{text-decoration:none;}
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/pic_1 (2).jpg" alt="Los Angeles" class="d-block w-100">
+      <img src="img/coffee.jpg" alt="Los Angeles" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
+        <h3 class="head">DHAKA</h3>
+        <p class= "line">We had such a great time in DHAKA!</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/pic_4.jpg" alt="Chicago" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+        <h3 class="head">CHITTAGONG</h3>
+        <p class= "line">Thank you, CHITTAGONG!</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/pic_1.jpg" alt="New York" class="d-block w-100">
+      <img src="img/pic_2.jpg" alt="New York" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+        <h3 class= "head">New York</h3>
+        <p class= "line">We love the FRY!</p>
       </div>
     </div>
   </div>
@@ -459,7 +465,7 @@ ul li a:hover{text-decoration:none;}
 	        </div>
 	        <div class="container">
 	        <!--paragraph content-->
-	             <p style="font-family: 'Lobster', cursive; font-weight:light; font-size:25px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	             <p style="font-family: 'Lobster', cursive; font-weight:light; font-size:25px;">Pasta</p>
 	        </div>
 	  </div>
 	   <!--main row 2 left right ends-->
