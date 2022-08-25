@@ -59,12 +59,12 @@ else
 		<style>
 		ul li{}
 		ul li a {color:black;}
-		ul li a:hover {color:black; font-weight:bold;}
+		/* ul li a:hover {color:black; font-weight:bold;} */
 		ul li {list-style:none;}
-		th{ color: green;}
+		/* th{ color: green;}
 		th:hover{
 			color: red;
-		}
+		} */
 
 ul li a:hover{text-decoration:none;}
 #social-fb,#social-tw,#social-gp,#social-em{color:blue;}

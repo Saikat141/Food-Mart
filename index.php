@@ -322,7 +322,7 @@ ul li a:hover{text-decoration:none;}
 	 <img src="img/istockphoto-516324258-612x612.jpg" height="300px" width="100%">
 	</div>
 	 <div class="container">
-	<p style="font-family: 'Lobster', cursive; font-weight:light;  font-size:25px;">Food Item</p>
+	<p style="font-family: 'Lobster', cursive; font-weight:light;  font-size:25px;">Roti(STOCK OUT)</p>
 	 </div>
 
 	</div>
@@ -465,7 +465,7 @@ ul li a:hover{text-decoration:none;}
 	        </div>
 	        <div class="container">
 	        <!--paragraph content-->
-	             <p style="font-family: 'Lobster', cursive; font-weight:light; font-size:25px;">Pasta</p>
+	             <p style="font-family: 'Lobster', cursive; font-weight:light; font-size:25px;">Pasta(STOCK OUT)</p>
 	        </div>
 	  </div>
 	   <!--main row 2 left right ends-->

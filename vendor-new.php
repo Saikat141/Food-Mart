@@ -55,6 +55,7 @@ extract($_REQUEST);
 		ul li{list-style:none;}
 		ul li a {color:black;text-decoration:none; }
 		ul li a:hover {color:black; text-decoration:none;}
+    
 		</style>
 </head>
 <body>
@@ -120,11 +121,11 @@ extract($_REQUEST);
                      </div>
                      <div class="form-group">
                          <label for="mob">Mobile:</label>
-                         <input type="tel" class="form-control" pattern="[7-9]{1}[0-9]{9}" value="<?php if(isset($mob)) { echo $mob;}?>"id="mob" placeholder="01xxx-xxxxxx" name="mob" required/>
+                         <input type="tel" class="form-control"  value="<?php if(isset($mob)) { echo $mob;}?>"id="mob" placeholder="01xxx-xxxxxx" name="mob" required/>
                      </div>
 	                 <div class="form-group">
                           <label for="phone">Phone:</label>
-                          <input type="tel" class="form-control" pattern="[011]{3}[0-7]{7}" id="phone" value="<?php if(isset($phone)) { echo $phone;}?>" placeholder="011-1234567" name="phone" required>
+                          <input type="tel" class="form-control"  id="phone" value="<?php if(isset($phone)) { echo $phone;}?>" placeholder="011-1234567" name="phone" required>
                      </div>
 	                 <div class="form-group">
                           <label for="add">Address:</label>

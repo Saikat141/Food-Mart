@@ -129,7 +129,8 @@ if(isset($logout))
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-     <style>
+     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
+	 <style>
 		ul li{}
 		ul li a {color:white;padding:40px; }
 		ul li a:hover {color:white;}
@@ -139,7 +140,7 @@ if(isset($logout))
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   
-    <a class="navbar-brand" href="../index.php"><span style="color:green;font-family: 'Permanent Marker', cursive;">Food Hunt</span></a>
+    <a class="navbar-brand" href="../index.php"><span style="color:red;font-family: 'Permanent Marker', cursive;">FOOD MART</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
