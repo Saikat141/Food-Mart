@@ -89,13 +89,15 @@ if(isset($message))
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	  <!--bootstrap files-->
-
+	  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Permanent+Marker" rel="stylesheet">
 
+	 
+  	<!-- <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> -->
+	<script src="https://kit.fontawesome.com/ecff94bd1a.js" crossorigin="anonymous"></script>
  		
 
 	 <script>
@@ -349,7 +351,7 @@ ul li a:hover{text-decoration:none;}
 		                     <a href="search.php?vendor_id=<?php echo $res['fldvendor_id']; ?>"><span style="font-family: 'Miriam Libre', sans-serif; font-size:28px;color:#CB202D;">
 		 <?php echo $res['fld_name']; ?></span></a>
         </div>
-		 <div class="col-sm-3"><i  style="font-size:20px;" class="fas fa-rupee-sign"></i>&nbsp;<span style="color:green; font-size:25px;"><?php echo $res['cost']; ?></span></div>
+		 <div class="col-sm-3"><i style="font-size:20px;" class="fa-solid fa-bangladeshi-taka-sign"></i>&nbsp;<a style="font-size:25px;">Price </a><span style="color:green; font-size:25px;"><?php echo $res['cost']; ?><a style="font-size:25px;">Tk</a></span></div>
 		 <form method="post">
 		 <div class="col-sm-2" style="text-align:left;padding:10px; font-size:25px;"><button type="submit" name="addtocart" value="<?php echo $res['food_id'];?>")" ><span style="color:green;" <i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button></div>
 		 <form>
@@ -366,7 +368,7 @@ ul li a:hover{text-decoration:none;}
 	     <div class="row" style="padding:10px; ">
 		 <div class="col-sm-6">
 		 <span><li><?php echo $res['cuisines']; ?></li></span>
-		 <span><li><?php echo "Rs ".$res['cost']; ?>&nbsp;for 1</li></span>
+		 <span><li><?php echo "TAKA ".$res['cost']; ?>&nbsp;for 1</li></span>
 		 <span><li>Up To 60 Minutes</li></span>
 		 </div>
 		 <div class="col-sm-6" style="padding:20px;">
@@ -424,7 +426,7 @@ ul li a:hover{text-decoration:none;}
 		                                               <div class="col-sm-5">
 		                            <!--hotelname-->        <span style="font-family: 'Miriam Libre', sans-serif; font-size:28px;color:#CB202D;"><?php echo $res['fld_name']; ?></span>
                                                        </div>
-		                            <!--ruppee-->      <div class="col-sm-3"><i  style="font-size:20px;" class="fas fa-rupee-sign"></i>&nbsp;<span style="color:green; font-size:25px;"><?php echo $res['cost']; ?></span></div>
+		                            <!--taka sign-->      <div class="col-sm-3"><i style="font-size:20px;" class="fa-solid fa-bangladeshi-taka-sign"></i>&nbsp;<a style="font-size:25px;">Price </a><span style="color:green; font-size:25px;"><?php echo $res['cost']; ?><a style="font-size:25px;">Tk</a></span></div>
 									                   <form method="post">
 		                         <!--add to cart-->    <div class="col-sm-2" style="text-align:left;padding:10px; font-size:25px;"><button type="submit"  name="addtocart" value="<?php echo $res['food_id'];?>"><span style="color:green;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></button></div>
 		                                               </form>
@@ -440,7 +442,7 @@ ul li a:hover{text-decoration:none;}
 	                                                 <div class="row" style="padding:10px; ">
 		                                                 <div class="col-sm-6">
 		                               <!--cuisine-->          <span><li><?php echo $res['cuisines']; ?></li></span>
-		                                <!--cost-->            <span><li><?php echo "Rs".$res['cost']; ?>&nbsp;for 1</li></span>
+		                                <!--cost-->            <span><li><?php echo "TAKA ".$res['cost']; ?>&nbsp;for 1</li></span>
 		                                <!--deliverytime-->    <span><li>Up To 60 Minutes</li></span>
 		                                                 </div>
 		                            <!--deliverytime-->  <div class="col-sm-6" style="padding:20px;"><h3><?php echo"(" .$res['foodname'].")"?></h3></div>
