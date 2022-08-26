@@ -102,7 +102,7 @@ background-size:100% 100%;
                    </div>
  
                   <button type="submit" name="login" style="background:#ED2553; border:1px solid #ED2553;" class="btn btn-primary">Login In</button>
-                  <div class="footer" style="color:red;"><?php if(isset($admin_login_error)) { echo $admin_login_error; }?></div>
+                  <div class="footer" style="color:yellow;"><?php if(isset($admin_login_error)) { echo $admin_login_error; }?></div>
                   <div class="footer" style="color:green;"><?php if(isset($_SESSION['pas_update_success'])) { echo $_SESSION['pas_update_success']; }?></div>
 			 </form>
 			</div>

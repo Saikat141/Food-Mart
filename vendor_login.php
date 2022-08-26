@@ -92,7 +92,7 @@ if(isset($_SESSION['id']))
 	   <div class="tab-content" id="myTabContent">
 	   <!--login Section-- starts-->
             <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
-			    <div class="footer" style="color:red;"><?php if(isset($admin_login_error)){ echo $admin_login_error;}?></div>
+			    <div class="footer" style="color:yellow;"><?php if(isset($admin_login_error)){ echo $admin_login_error;}?></div>
 			  <form action="" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                            <label for="username" style="color: white;padding: auto;">Username:</label>
